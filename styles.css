@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #0a0a0a;
-    color: #333;
+    color: #ebebf3;
     line-height: 1.6;
 }
 
@@ -26,7 +26,7 @@ nav {
 }
 
 nav .logo img {
-    height: 50px; /* Ajusta la altura según tus necesidades */
+    height: 80px; /* Ajusta la altura según tus necesidades */
     width: auto;
 }
 
@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #3498db;
+    color: #2980b9;
 }
 
 /* Encabezado con video de fondo */
@@ -126,7 +126,7 @@ section {
 section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #2c3e50;
+    color: #2980b9;
 }
 
 /* Servicios */
@@ -158,4 +158,74 @@ form {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+
+/* Fondo oscurecido para la ventana emergente */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1001;
+}
+
+/* Contenido de la ventana emergente */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #070606;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Enlace para iniciar el chat */
+.start-chat {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: #141414;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.start-chat:hover {
+    background-color: #1ebe57;
 }
