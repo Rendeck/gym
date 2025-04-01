@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#inicio" class="logo">
+            <img src="img/WhatsApp Image 2024-09-06 at 10.29.09 PM.jpeg" alt="Fitness Pro">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <header id="inicio">
+        <div class="video-container">
+            <video autoplay muted loop id="videoFondo">
+                <source src="video/1116198_Exersice_Woman_1920x1080.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="contenido-header">
+            <h1>Bienvenido a Fitness Pro</h1>
+            <p>Tu camino hacia una vida más saludable comienza aquí.</p>
+            <a href="#servicios" class="btn">Descubre más</a>
+        </div>
+    </header>
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+            <h3>Entrenamiento Personalizado</h3>
+            <p>Planes adaptados a tus necesidades y objetivos.</p>
+        </div>
+        <div class="servicio">
+            <h3>Clases Grupales</h3>
+            <p>Únete a nuestra comunidad y entrena en grupo.</p>
+        </div>
+        <div class="servicio">
+            <h3>Nutrición</h3>
+            <p>Asesoría nutricional para complementar tu entrenamiento.</p>
+        </div>
+    </section>
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="galeria">
+            <img src="img/female-bodybuilder-training-biceps-with-dumbbells.jpg" alt="Imagen 1">
+            <img src="img/fitnesswoman-posing-gym.jpg" alt="Imagen 2">
+            <img src="img/low-angle-view-unrecognizable-muscular-build-man-preparing-lifting-barbell-health-club.jpg" alt="Imagen 3">
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <input type="text" id="nombre" placeholder="Tu Nombre" required>
+            <input type="email" id="email" placeholder="Tu Email" required>
+            <textarea id="mensaje" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Fitness Pro. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
